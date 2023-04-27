@@ -35,7 +35,9 @@ then
    systemctl stop nginx
    pkill -9 nginx
    apt purge -y nginx
+   apt install -y nginx
 fi
+
 
 # 安装 ufw
 apt install -y curl unzip lsof git ufw nginx
